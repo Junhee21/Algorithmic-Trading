@@ -1,4 +1,4 @@
-# 21 08 26
+# 21 10 07
 
 import pyupbit
 import numpy as np
@@ -11,8 +11,7 @@ def get_ror(k=0.5):
 
     fee = 0.0032
     df['ror'] = np.where(df['high'] > df['target'],
-                         df['close'] / df['target'] - fee,
-                         1)
+                         df['close'] / df['target'] - fee, 1)
 
     ror = df['ror'].cumprod()[-2]
     return ror
