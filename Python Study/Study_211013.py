@@ -8,7 +8,7 @@ class Supermario: # Supermairo라는 이름의 class 선언
     def __init__(self): # 멤버함수 = 함수 = method
         self.pos = 0
     def forward(self):
-        self.pos = self.pos + 20
+        self.pos = self.pos + 30
 
 # class는 데이터와 이를 처리하는 함수를 묶어서 하나의 타입으로 정의한 것
 # class 안의 데이터(변수)와 함수(method)를 통틀어 attribute(속성) 이라고 함
