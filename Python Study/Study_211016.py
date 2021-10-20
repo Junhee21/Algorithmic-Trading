@@ -13,7 +13,7 @@ class Mywindow(QMainWindow):
         super().__init__()
         self.setGeometry(1000, 100, 400, 800)
         self.setWindowTitle("Hihi")
-        self.setWindowIcon(QIcon('aa.png'))
+        self.setWindowIcon(QIcon('flood_house_water_natural_phenomenon_catastrophe_icon_194190.png'))
 
         btn1 = QPushButton("button 1", self)
         btn1.move(10,10)
@@ -25,8 +25,7 @@ class Mywindow(QMainWindow):
         print("Click!")
 
 
-
-form_class = uic.loadUiType('window211016_1.ui')[0]
+form_class = uic.loadUiType("window211016_1.ui")[0]
 class Mywindow2(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
