@@ -2,18 +2,17 @@
 #PyQt5 익히기
 
 import sys
-import os
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import uic
 
-
+# window class 1
 class Mywindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(1000, 100, 400, 800)
         self.setWindowTitle("Hihi")
-        self.setWindowIcon(QIcon('flood_house_water_natural_phenomenon_catastrophe_icon_194190.png'))
+        #self.setWindowIcon(QIcon("파일.png"))
 
         btn1 = QPushButton("button 1", self)
         btn1.move(10,10)
@@ -24,8 +23,8 @@ class Mywindow(QMainWindow):
     def btn_clicked(self): #콜백 함수
         print("Click!")
 
-
-form_class = uic.loadUiType("window211016_1.ui")[0]
+# window class 2s
+form_class = uic.loadUiType("C:/Junhee/QtDesigner/211016_1.ui")[0]
 class Mywindow2(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
