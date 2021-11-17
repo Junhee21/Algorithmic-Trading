@@ -6,5 +6,3 @@
 k(parameter) = 0.3으로 설정
 
 이상 없음
-
-## Backtesting
